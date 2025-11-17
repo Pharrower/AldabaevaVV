@@ -75,7 +75,8 @@ def plot_time_vs_datatype(results: dict, size: int = 5000):
     plt.legend()
     plt.grid(True, alpha=0.3, axis='y')
     plt.tight_layout()
-    plt.savefig(f'time_vs_datatype_size_{size}.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'time_vs_datatype_size_{size}.png',
+                dpi=300, bbox_inches='tight')
     plt.show()
 
 
