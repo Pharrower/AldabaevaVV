@@ -17,7 +17,7 @@ class HashTableOpenAddressing:
     """Хеш-таблица с открытой адресацией."""
 
     def __init__(self, size: int = 101, hash_func: str = 'simple',
-                 probing_method: str = 'linear', load_factor_threshold: float = 0.7):
+                    probing='linear', load_factor=0.7):
         """
         Инициализация хеш-таблицы.
 

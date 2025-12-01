@@ -15,7 +15,7 @@ class HashTableChaining:
         Args:
             size: Начальный размер таблицы (простое число)
             hash_func: Используемая хеш-функция ('simple', 'polynomial', 'djb2')
-            load_factor_threshold: Порог коэффициента заполнения для рехеширования
+            load_factor_threshold: Порог для рехеширования
         """
         self.size = size
         self.count = 0
@@ -134,5 +134,5 @@ class HashTableChaining:
                 collisions += len(bucket) - 1
             total_chain_length += len(bucket)
 
-        avg_chain_length = total_chain_length / self.size if self.size > 0 else 0
+        avg_chain_length = total_chain_length / self.size if self.size else 0
         return collisions, avg_chain_length
